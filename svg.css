@@ -1,0 +1,113 @@
+.main{ 
+  background: url(https://cdn.pixabay.com/photo/2014/09/11/12/45/science-fiction-441708_960_720.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#p1{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	top: 120px;
+	left: 800px;
+}
+#p2{
+	color: #088261;
+	font-weight: bold;
+}
+h2{
+	color: #B9AF08;
+}
+
+.blue .top{
+	fill: #FD6B0A;
+}
+.ignite .three{
+	transform: scale(.8);
+	 transform-origin: 339px 405px;
+} 
+.ignite .four{
+	transform: scale(.8);
+	 transform-origin: 339px 405px;
+}
+@keyframes moves{
+	0%{
+		transform: translateY(-18px);
+	}
+	20%{
+		transform: translateY(50px);
+	}
+	55%{
+		transform: translateY(0px);
+	}
+	80%{
+		transform: translateY(-44px);
+	}
+	100%{
+		transform: translateY(-80px);
+	}
+}
+.move .arrow{
+	animation: moves 10s infinite
+}
+@keyframes one1{
+	20%{
+		transform: rotate(10deg);
+	}
+	70%{
+		transform: rotate(-10deg);
+	}
+
+}
+.move .one1{
+	animation: one1 5s infinite;
+	transform-origin: 329px 410px  /*left/top*/
+}
+@keyframes two2{
+	20%{
+		transform: rotate(10deg);
+	}
+	70%{
+		transform: rotate(-10deg);
+	}
+
+}
+.move .two2{
+	animation: two2 5s infinite;
+	transform-origin: 378px 400px  /*left/top*/
+}
+@keyframes moved{
+	20%{
+		transform: rotate(1deg);
+	}
+	80%{
+		transform: rotate(-0.4deg);
+	}
+
+}
+.move .body{
+	animation: moved 10s infinite;
+}
+
+@keyframes moving{
+	20%{
+		transform: rotateY(10deg) rotateX(10deg);
+	}
+	40%{
+		transform: rotateY(75deg) rotateX(10deg);
+	}
+	60%{
+		transform: rotateY(-10deg) rotateX(-70deg);
+	}
+	85%{
+		transform: rotateY(-10deg) rotateX(-20deg);
+	}
+}
+.move .layer{
+	animation: moving 10s infinite;
+}
+.container{
+	perspective: 1500px;
+}
